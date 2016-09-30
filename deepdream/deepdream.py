@@ -111,7 +111,7 @@ img = np.float32(img)
 frame = img
 #frame_i = 0
 
-frame = deepdream(net, frame, end=json_data['layer'])
+frame = deepdream(net, frame, iter_n=json_data['iter_n'], octave_n=json_data['octave_n'], end=json_data['layer'])
 #frame = deepdream(net, img, end='inception_3b/5x5_reduce')
 #frame = deepdream(net, img, end='conv2/3x3')
 
